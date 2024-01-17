@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro TS</title>
+</head>
+<body>
+    <!--
+        javascript ha dei limiti
+        1. scarso orientamento agli oggetti
+        2. non c'è controllo forte sul tipo di dato
+        3. non c'è controllo degli errori in fase di compilazione
+
+        TypeScript per definizione "TypeScript è JavaScript per lo sviluppo su scala di applicazioni"
+        compilato e fortemente tipizzato + nasce insieme a un kit di strumenti
+        compilato perché nelle applicazioni sarà il file javascript compilato da typescript a essere usato
+
+        TypeScript inizia con JavaScript e finisce con Javascript -> tutto il codice typeScript viene convertito in javascript per essere eseguito
+
+        Qualsiasi file .js compilato da .ts sarà poi compatibile al 100% (framework, libreria...)
+
+        vantaggi rispetto a javascript:
+        1. compilazione. javascript è un linguaggio interpretato (deve essere eseguito per verificare che sia valido)
+                         typescript ha un transpiler del codice (fornisce una funzione di controllo degli errori)
+                         -> mentre viene compilato il codice lo strumento di debug segnala gli errori
+        2. tipizzazione forte. con typeScript dichiariamo il tipo di dato, typeScript può dedurre il tipo di dato
+        3. costrutti orientati a OOP (classi, erediterietà, interfacce, generics)
+
+        npm install -g typescript
+        tsc -v
+        tsc (type script compiler) sarà il comomando che ci permette di generare file .js a partire da file .ts
+        tsc nome_del_file.ts -> il risultato sarà -> nome_del_file.js
+        possiamo generare più file contemporaneamente -> tsc script1.ts script2.ts script3.ts
+
+        TypeScript è una estensione di JavaScript -> qualsiasi script Javascript è anche codice TypeScript valido
+        -> possiamo fare una transizione da un progetto in .js a uno in .ts gradualmente
+        -> possiamo sfruttare il compilatore typeScript per individuare degli errori
+
+        ////////////// regole di naming per gli identificatori
+        * non può iniziare con una cifra
+        * non possono includere simboli speciali (gli unici validi _ $)
+        * non possono essere parole chiave (switch, else, while, number, string, super, extends...)
+        * devono essere unici
+        * case sensitive (c'è distinzione tra maiuscole e minuscole)
+        * non possono contenere spazi
+
+        ///////////// altre regole sintattiche di typeScript
+        * ignora gli spazi e le tabulazioni (li posso usare per rendere il mio codice più comprensibile, ma ignorate quando compilo)
+        * i punti e virgola (;) sono facoltativi -> ogni istruzione è uno statement e va su una riga - se metto più istruzioni uso ; -
+        * i commenti -> // commento singola linea -> /* */ commento più righe
+
+        ///////////// i tipi di dati
+        * number, string, boolean esattamente come in javascipt
+        * any -> è un super tipo typeScript, è l'unico tipo di dato dinamico di typeScript
+              -> è l'equivalente di disattivare il controllo sul tipo di dato (come se fossi in javascript)
+        * void -> lo uso quando ho una funzione che non restituisce nessun valore
+        * null, undefined -> null (nessun valore), undefined (niente nemmeno null)   
+    -->
+</body>
+</html>
